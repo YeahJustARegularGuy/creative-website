@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fully working website with backend and server">
+  <meta name="keywords" content="website, fullstack, Node.js, Express">
+  <title>FullStack Website</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">FullStack</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Welcome to FullStack Website</h1>
+    <p>A fully working website with backend and server</p>
+    <button onclick="checkServer()">Check Server Status</button>
+    <p id="server-status"></p>
+  </section>
+
+  <section id="about">
+    <h2>About This Site</h2>
+    <p>This website features:</p>
+    <ul>
+      <li>Node.js & Express Backend</li>
+      <li>RESTful API Endpoints</li>
+      <li>Responsive Design</li>
+      <li>Contact Form with Backend Integration</li>
+    </ul>
+  </section>
+
+  <section id="posts">
+    <h2>Latest Posts</h2>
+    <div id="posts-container"></div>
+    <button onclick="loadPosts()">Load Posts</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-response"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 FullStack Website. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
